@@ -1,21 +1,4 @@
-$background-secondary : #569C87;
-$color-primary:#FCCB44;
-$bg-1 :#FCE1DD;
-$bg-2 :#FEF5FF;
-$bg-3 :#F9F9F9;
-$bg-4 :#FDFFFD;
-$font-primary:'Montserrat', sans-serif;
-$font-1:'Niconne', cursive;
-$font-2:'Croissant One', cursive;
-$font-3:'Niconne', cursive;
-$font-4:'Kaushan Script', cursive;
-$font-5:'Tillana', cursive;
-$font-6:'Merriweather', serif;
-$font-7:'Bad Script', cursive;
-$color-1:#60393D;
-$color-2: #D88530;
-$color-3: #4791F3;
-$color-4:#C0E0BA;
+@import '_variable.scss','_mixin.scss';
 @keyframes ellipsis {
 	0% {
 		width: 0;
@@ -39,262 +22,155 @@ $color-4:#C0E0BA;
 	100% { transform: translate(1px, -2px) rotate(-1deg); }
 }
 
-
-
-
-
-@mixin font {
-
-	font-family: 'Montserrat', sans-serif;
-	font-size: 30px;
-	color: $color-primary;
-
-}
-@mixin card-style
+*
 {
-	text-align: center;
-	
-	height: 600px;
-	width: 450px;
-	justify-content: center;
-	margin: 20px;
+	margin : 0;
+
+}
+
+
+.head-bar{
+	background-color: $background-secondary;
 	display: flex;
-	flex-direction: column;
-	margin-left:75px;
-	font-size:40px;
+	justify-content: center;
+	height:100px;
+	img {
+		height: 75px;
+		width: 500px;
+		padding-top: 20px;
+	}
 }
-@mixin box-shadow{
-	box-shadow: 0px 10px 10px 0px #D6D5D4;
+
+
+main 
+{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+
 }
-@mixin hover
 
+.resto-note{
+	@include box-shadow;
+	@include card-style;
 
-{	
-
-	transform: scale(0.8);
-	transition: transform 400ms;
-	&:hover {
-		transform: scale(1.05);
-		  filter: brightness(110%);}
-
+	a{
+		text-decoration: none;
+		color:$color-1;
+		@include hover;
 	}
-	*
-	{
-		margin : 0;
-
+	background-color:$bg-1;
+	h2{font-family: $font-1;}
+	h3{font-family: $font-5;	}
+	font-size:50px;}
+	.fa-music{
+		background: -webkit-gradient(linear, left top, left bottom, from($color-2), to($color-21));
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
 	}
-
-
-	.head-bar{
-		background-color: $background-secondary;
-		display: flex;
-		justify-content: center;
-		height:100px;
-		img {
-			height: 75px;
-			width: 500px;
-			padding-top: 20px;
-		}
-
-
-
-
-	}
-
-
-	main 
-	{
-		display: flex;
-		flex-direction: row;
-		flex-wrap: wrap;
-		justify-content: center;
-
-
-
-
-	}
-	
-
-
-
-
-
-
-
-	
-
-
-	.resto-note{
-		@include box-shadow;
-		@include card-style;
-
-		a{
-			text-decoration: none;
-			color:$color-1;
-			@include hover;
-
-
-		}
-		
-
-		background-color:$bg-1;
-		h2{font-family: $font-1;}
-		h3{font-family: $font-5;	}
-		font-size:50px;}
-		.fa-music{
-		
-	
-		background: -webkit-gradient(linear, left top, left bottom, from($color-2), to(#F05561));
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-			}
-
-		
-
 	.resto-chic{
 		@include box-shadow;
 		@include card-style;
-
 		a{
 			text-decoration: none;
 			h2{	-webkit-background-clip: text;
-			-webkit-text-fill-color: transparent;
-			background-image: -webkit-linear-gradient(left,  red, blue);}
-		
-			h3{	color:$color-2;
-			font-size:50px;}
-			
-		
-			@include hover;
+				-webkit-text-fill-color: transparent;
+				background-image: -webkit-linear-gradient(left,  red, blue);}
 
-		}
-		
-		background-color:$bg-2;
-		h2{font-family: $font-2;
-			font-size: 30px;}
-		h3{font-family: $font-6}
-	}
-	.resto-delice{
-		@include box-shadow;
-		@include card-style;
-		a{
-			text-decoration: none;
-			-webkit-background-clip: text;
-			-webkit-text-fill-color: transparent;
-			background-image: -webkit-linear-gradient(left, blue,$color-3);
-			@include hover;
-
-		}
-		
-		background-color:$bg-3;
-		h2{font-family:$font-3;}
-		h3{font-family: $font-7;
-		font-size:50px;
-	}
-}
-
-	
-	.resto-palette{
-		@include box-shadow;
-		a{
-			text-decoration: none;
-			text-decoration: none;
-			-webkit-background-clip: text;
-			-webkit-text-fill-color: transparent;
-			background-image: -webkit-linear-gradient(left, green,$color-4);
-			@include hover;
-
-		}
-		@include card-style;
-		background-color:$bg-4;
-		h2{font-family:$font-4;}
-		h3{font-family: $font-7;
-		font-size:50px;}
-
-
-	}
-
-
-
-
-
-
-	.annonce 
-	{
-		@include box-shadow;
-		height: 50px;
-		width: 300px;
-		border-radius: 15px;
-		position: relative;
-
-		display: flex;
-		justify-content: center;
-
-		margin :100px auto;
-		font-size: 30px;
-		background-color: $background-secondary;
-
-		border: 0.3px solid $color-primary;
-		@include font;
-		p {
-			margin: auto;
-			&::after{	content: "\2026";
-				position: absolute;
-				padding-left: 5px;
-				overflow: hidden;
-				animation: ellipsis steps(4) 1.3s infinite;}
-			}
-
-
-		}
-
-
-
-
-
-
-
-
-
-
-
-		.footer-bar
-		{
-
-			background-color: $background-secondary;
-			display: flex;
-			flex-direction: row;
-
-
-			position: fixed;
-			bottom: 0;
-			right: 0;
-			left: 0;
-			width: 100%;
-			justify-content: space-between;
-
-
-
-			border-top: 0.5px solid $color-primary;
-			&__link{
-
-				margin: 20px 5px;
-				&:hover {
-					animation: shake 0.5s infinite;
-
+				h3{	color:$color-2;
+					font-size:50px;}
+					@include hover;
 				}
-
-				a {
-					text-decoration: none;
-					@include font;	
-
-
-
+				background-color:$bg-2;
+				h2{font-family: $font-2;
+					font-size: 30px;}
+					h3{font-family: $font-6}
 				}
+				.resto-delice{
+					@include box-shadow;
+					@include card-style;
+					a{
+						text-decoration: none;
+						-webkit-background-clip: text;
+						-webkit-text-fill-color: transparent;
+						background-image: -webkit-linear-gradient(left, blue,$color-3);
+						@include hover;
+					}
+					background-color:$bg-3;
+					h2{font-family:$font-3;}
+					h3{font-family: $font-7;
+						font-size:50px;
+					}
+				}
+				.resto-palette{
+					@include box-shadow;
+					a{
+						text-decoration: none;
+						text-decoration: none;
+						-webkit-background-clip: text;
+						-webkit-text-fill-color: transparent;
+						background-image: -webkit-linear-gradient(left, green,$color-4);
+						@include hover;
 
+					}
+					@include card-style;
+					background-color:$bg-4;
+					h2{font-family:$font-4;}
+					h3{font-family: $font-7;
+						font-size:50px;}
 
-			}
+					}
 
-		}
+					.annonce 
+					{
+						@include box-shadow;
+						height: 50px;
+						width: 300px;
+						border-radius: 15px;
+						position: relative;
 
+						display: flex;
+						justify-content: center;
 
+						margin :100px auto;
+						font-size: 30px;
+						background-color: $background-secondary;
+
+						border: 0.3px solid $color-primary;
+						@include font;
+						p {
+							margin: auto;
+							&::after{	content: "\2026";
+								position: absolute;
+								padding-left: 5px;
+								overflow: hidden;
+								animation: ellipsis steps(4) 1.3s infinite;}
+							}
+						}
+						.footer-bar
+						{
+
+							background-color: $background-secondary;
+							display: flex;
+							flex-direction: row;
+							position: fixed;
+							bottom: 0;
+							right: 0;
+							left: 0;
+							width: 100%;
+							justify-content: space-between;
+							border-top: 0.5px solid $color-primary;
+							&__link{
+
+								margin: 20px 5px;
+								&:hover {
+									animation: shake 0.5s infinite;
+
+								}
+								a {
+									text-decoration: none;
+									@include font;	
+								}
+							}
+						}
