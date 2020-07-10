@@ -1,21 +1,5 @@
-$background-secondary : #569C87;
-$color-primary:#FCCB44;
-$bg-1 :#FCE1DD;
-$bg-2 :#FEF5FF;
-$bg-3 :#F9F9F9;
-$bg-4 :#FDFFFD;
-$font-primary:'Montserrat', sans-serif;
-$font-1:'Niconne', cursive;
-$font-2:'Croissant One', cursive;
-$font-3:'Niconne', cursive;
-$font-4:'Kaushan Script', cursive;
-$font-5:'Tillana', cursive;
-$font-6:'Merriweather', serif;
-$font-7:'Bad Script', cursive;
-$color-1:#60393D;
-$color-2: #D88530;
-$color-3: #4791F3;
-$color-4:#C0E0BA;
+
+@import '_variable.scss','_mixin.scss','_layout.scss';
 @keyframes ellipsis {
 	0% {
 		width: 0;
@@ -43,64 +27,10 @@ $color-4:#C0E0BA;
 
 
 
-@mixin font {
-
-	font-family: 'Montserrat', sans-serif;
-	font-size: 30px;
-	color: $color-primary;
-
+*{
+	margin: 0
 }
-@mixin card-style
-{
-	text-align: center;
 	
-	height: 600px;
-	width: 450px;
-	justify-content: center;
-	margin: 20px;
-	display: flex;
-	flex-direction: column;
-	margin-left:75px;
-	font-size:40px;
-}
-@mixin box-shadow{
-	box-shadow: 0px 10px 10px 0px #D6D5D4;
-}
-@mixin hover
-
-
-{	
-
-	transform: scale(0.8);
-	transition: transform 400ms;
-	&:hover {
-		transform: scale(1.05);
-		  filter: brightness(110%);}
-
-	}
-	*
-	{
-		margin : 0;
-
-	}
-
-
-	.head-bar{
-		background-color: $background-secondary;
-		display: flex;
-		justify-content: center;
-		height:100px;
-		img {
-			height: 75px;
-			width: 500px;
-			padding-top: 20px;
-		}
-
-
-
-
-	}
-
 
 	main 
 	{
@@ -213,12 +143,6 @@ $color-4:#C0E0BA;
 
 
 	}
-
-
-
-
-
-
 	.annonce 
 	{
 		@include box-shadow;
@@ -247,54 +171,3 @@ $color-4:#C0E0BA;
 
 
 		}
-
-
-
-
-
-
-
-
-
-
-
-		.footer-bar
-		{
-
-			background-color: $background-secondary;
-			display: flex;
-			flex-direction: row;
-
-
-			position: fixed;
-			bottom: 0;
-			right: 0;
-			left: 0;
-			width: 100%;
-			justify-content: space-between;
-
-
-
-			border-top: 0.5px solid $color-primary;
-			&__link{
-
-				margin: 20px 5px;
-				&:hover {
-					animation: shake 0.5s infinite;
-
-				}
-
-				a {
-					text-decoration: none;
-					@include font;	
-
-
-
-				}
-
-
-			}
-
-		}
-
-
