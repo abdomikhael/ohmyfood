@@ -1,0 +1,151 @@
+
+@import '_variable.scss','_mixin.scss','_layout.scss';
+
+*
+{
+	margin: 0
+}
+body{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+
+
+
+}
+
+main{
+	text-align: center;
+	margin :auto;
+	width: 80%;
+	padding-bottom: 50px;
+	
+	font-size: 18px;
+	margin-bottom: 100px;
+
+@include box-shadow}
+.nom
+{
+  text-align: center;
+  font-family:$font-primary;
+  margin:  50px 0;
+  font-weight: 1000;
+  
+}
+ .titre-principal
+ {
+ 	margin: 80px 0; 
+ }
+ .categorie-titre
+ {
+ 	margin: 80px 0; 
+    &--note
+     {
+    
+   }
+
+            
+
+  }
+.categorie__titre--note h3::after {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  width: 170px;
+  height: 4px;
+  background: $color-1;
+    margin-left: 80px;
+ 
+}
+
+.categorie__titre--note h3::before {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+
+  width: 170px;
+  height: 4px;
+  background: $color-1;
+  margin-right: 80px;
+     
+ }
+ 
+
+
+
+.categorie-plat {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  margin: 20px 100px 20px 100px; 
+  &__nom {
+  	margin-right: auto;
+    margin-bottom: 20px;
+  	font-weight: 1;
+  	 &--1{
+  	 text-align: left;
+  	 margin-left: 100px;
+     margin-bottom: 20px;
+  	 }
+  	 }
+
+  }
+  .categorie-plat--1
+     {
+      margin: 20px 0;
+        font-weight: 1;
+     }
+
+  .dessert{
+  	color:red;
+  }
+
+
+  
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; 
+  margin: 40px 0;
+   h2 {
+
+
+    margin-left: 10px; }
+    }
+
+.fa-music {
+  background: -webkit-gradient(linear, left top, left bottom, from(#D88530), to(#F05561));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; }
+
+.menu-note{
+	background-color:$bg-1;
+		font-family: $font-2;
+		
+		}
+
+.menu-chic
+{
+	background-color:$bg-2;
+		font-family: $font-2;
+	
+
+		}
+
+
+		
+		
+.menu-palette
+{
+	background-color:$bg-3;
+		font-family: $font-3;
+		
+		}
+.menu-delice
+{
+	background-color:$bg-4;
+		font-family: $font-4;
+		
+		}

@@ -1,4 +1,9 @@
+<<<<<<< HEAD
 @import '_variable.scss','_mixin.scss';
+=======
+
+@import '_variable.scss','_mixin.scss','_layout.scss';
+>>>>>>> index-scss
 @keyframes ellipsis {
 	0% {
 		width: 0;
@@ -22,6 +27,7 @@
 	100% { transform: translate(1px, -2px) rotate(-1deg); }
 }
 
+<<<<<<< HEAD
 *
 {
 	margin : 0;
@@ -68,6 +74,27 @@ main
 		background: -webkit-gradient(linear, left top, left bottom, from($color-2), to($color-21));
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
+=======
+
+
+
+
+*{
+	margin: 0
+}
+	
+
+	main 
+	{
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+
+
+
+
+>>>>>>> index-scss
 	}
 	.resto-chic{
 		@include box-shadow;
@@ -75,6 +102,7 @@ main
 		a{
 			text-decoration: none;
 			h2{	-webkit-background-clip: text;
+<<<<<<< HEAD
 				-webkit-text-fill-color: transparent;
 				background-image: -webkit-linear-gradient(left,  red, blue);}
 
@@ -174,3 +202,88 @@ main
 								}
 							}
 						}
+=======
+			-webkit-text-fill-color: transparent;
+			background-image: -webkit-linear-gradient(left,  red, blue);}
+		
+			h3{	color:$color-2;
+			font-size:50px;}
+			
+		
+			@include hover;
+
+		}
+		
+		background-color:$bg-2;
+		h2{font-family: $font-2;
+			font-size: 30px;}
+		h3{font-family: $font-6}
+	}
+	.resto-delice{
+		@include box-shadow;
+		@include card-style;
+		a{
+			text-decoration: none;
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+			background-image: -webkit-linear-gradient(left, blue,$color-3);
+			@include hover;
+
+		}
+		
+		background-color:$bg-3;
+		h2{font-family:$font-3;}
+		h3{font-family: $font-7;
+		font-size:50px;
+	}
+}
+
+	
+	.resto-palette{
+		@include box-shadow;
+		a{
+			text-decoration: none;
+			text-decoration: none;
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+			background-image: -webkit-linear-gradient(left, green,$color-4);
+			@include hover;
+
+		}
+		@include card-style;
+		background-color:$bg-4;
+		h2{font-family:$font-4;}
+		h3{font-family: $font-7;
+		font-size:50px;}
+
+
+	}
+	.annonce 
+	{
+		@include box-shadow;
+		height: 50px;
+		width: 300px;
+		border-radius: 15px;
+		position: relative;
+
+		display: flex;
+		justify-content: center;
+
+		margin :100px auto;
+		font-size: 30px;
+		background-color: $background-secondary;
+
+		border: 0.3px solid $color-primary;
+		@include font;
+		p {
+			margin: auto;
+			&::after{	content: "\2026";
+				position: absolute;
+				padding-left: 5px;
+				overflow: hidden;
+				animation: ellipsis steps(4) 1.3s infinite;}
+			}
+
+
+		}
+>>>>>>> index-scss
