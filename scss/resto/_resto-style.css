@@ -41,6 +41,11 @@
       font-size: 30px;
       color: #FCCB44; }
 
+@keyframes ellipsis {
+  0% {
+    width: 0; }
+  100% {
+    width: 0.9em; } }
 * {
   margin: 0; }
 
@@ -100,6 +105,28 @@ main {
   margin: 40px 0; }
   .footer h2 {
     margin-left: 10px; }
+
+.categorie__titre h3 span {
+  display: inline-block;
+  position: relative; }
+  .categorie__titre h3 span::after {
+    content: '';
+    display: block;
+    position: relative;
+    width: auto;
+    transform: scalex(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #FCCB44;
+    transform-origin: bottom right;
+    transition: transform .35s ease-out; }
+  .categorie__titre h3 span:hover {
+    display: inline-block;
+    position: relative; }
+  .categorie__titre h3 span:hover::after {
+    transform: scalex(1);
+    transform-origin: bottom left; }
 
 .fa-music {
   background: -webkit-gradient(linear, left top, left bottom, from(#D88530), to(#F05561));

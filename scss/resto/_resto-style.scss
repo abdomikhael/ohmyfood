@@ -1,5 +1,14 @@
 
 @import '_variable.scss','_mixin.scss','_layout.scss';
+@keyframes ellipsis {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 0.9em;
+  }
+}
 
 *
 {
@@ -23,222 +32,251 @@ main{
 	font-size: 18px;
 	margin-bottom: 100px;
 
-@include box-shadow}
-.nom
-{
-  text-align: center;
-  font-family:$font-primary;
-  margin:  50px 0;
-  font-weight: 1000;
-  
-}
+  @include box-shadow}
+  .nom
+  {
+    text-align: center;
+    font-family:$font-primary;
+    margin:  50px 0;
+    font-weight: 1000;
 
-
-
- .titre-principal{
-  @include titre-principal-margin;
-
- }
-
- 
- .categorie__titre 
- {
-  display: flex;
-  width: 80%;
-  margin: auto;
-  h3{
-
-    width: 60%;
   }
 
 
-}
+
+  .titre-principal{
+    @include titre-principal-margin;
+
+  }
+
+
+  .categorie__titre 
+  {
+    display: flex;
+    width: 80%;
+    margin: auto;
+    h3{
+
+      width: 60%;
+    }
+
+
+  }
   
-     
- 
- 
- 
 
 
 
-.categorie-plat {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: center;
-  margin: 20px 100px 20px 100px; 
-  &__nom {
-  	margin-right: auto;
-    margin-bottom: 20px;
-  	font-weight: 1;
-  	 &--1{
-  	 text-align: left;
-  	 margin-left: 100px;
+
+
+
+
+  .categorie-plat {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    margin: 20px 100px 20px 100px; 
+    &__nom {
+     margin-right: auto;
      margin-bottom: 20px;
-  	 }
-  	 }
-
+     font-weight: 1;
+     &--1{
+      text-align: left;
+      margin-left: 100px;
+      margin-bottom: 20px;
+    }
   }
-  .categorie-plat--1
-     {
-      margin: 20px 0;
-        font-weight: 1;
-     }
 
-  
+}
+.categorie-plat--1
+{
+  margin: 20px 0;
+  font-weight: 1;
+}
 
 
-  
+
+
+
 
 .footer {
   display: flex;
   flex-direction: row;
   justify-content: center; 
   margin: 40px 0;
-   h2 {
+  h2 {
 
 
     margin-left: 10px; }
+  }
+  .categorie__titre h3 span{
+    display: inline-block;
+    position: relative;
+    &::after{
+    content:'';
+    display: block;
+    position: relative;
+    width: auto;
+    transform: scalex(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: $color-primary;
+    transform-origin: bottom right;
+    transition: transform .35s ease-out;
+
+
+
+  }
+  &:hover{
+    display: inline-block;
+    position: relative;
+  }
+  &:hover::after{
+    transform: scalex(1);
+    transform-origin: bottom left;
     }
-
-.fa-music {
-  background: -webkit-gradient(linear, left top, left bottom, from(#D88530), to(#F05561));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; }
-
-.menu-note{
-	background-color:$bg-1;
-		font-family: $font-2;
+  }
       
-    
 
-
-    }
-    .menu-note .categorie__titre::before {
-  @include categorie-titre;
+      
   
-  background-color: $color-1;
-
+  .fa-music {
+    background: -webkit-gradient(linear, left top, left bottom, from(#D88530), to(#F05561));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; }
     
 
-    }
- .menu-note .categorie__titre::after {
-    @include categorie-titre;
- background-color: $color-1;
- 
-    }
 
-.menu-chic
-{
-	background-color:$bg-2;
-		font-family: $font-2;
-
-    }
-    .titre-chic{
-      @include titre-principal-margin;
-        -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
-          background-image: -webkit-linear-gradient(left,  red, blue);
-	
-
-		}
-    .menu-chic .categorie__titre::before {
+      .menu-note{
+       background-color:$bg-1;
+       font-family: $font-2;
+      }
+     .menu-note .categorie__titre::before {
       @include categorie-titre;
-  
-        -webkit-text-fill-color: transparent;
-          background-image: -webkit-linear-gradient(left,  #5a32c0, #b14a00);
 
-    
+      background-color: $color-1;
+
+
 
     }
-    .menu-chic .categorie__titre::after {
+    .menu-note .categorie__titre::after {
       @include categorie-titre;
-  
-        -webkit-text-fill-color: transparent;
-          background-image: -webkit-linear-gradient(left, #b14a00, #5a32c0 );
-
-    
+      background-color: $color-1;
 
     }
 
-    .entree
+    .menu-chic
     {
-      color: #b14a00,
-    }
-.plat-principal
-{
-  color:#ae5187;
-}
+     background-color:$bg-2;
+     font-family: $font-2;
 
-.dessert{
+   }
+   .titre-chic{
+    @include titre-principal-margin;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: -webkit-linear-gradient(left,  red, blue);
+
+
+  }
+  .menu-chic .categorie__titre::before {
+    @include categorie-titre;
+
+    -webkit-text-fill-color: transparent;
+    background-image: -webkit-linear-gradient(left,  #5a32c0, #b14a00);
+
+    
+
+  }
+  .menu-chic .categorie__titre::after {
+    @include categorie-titre;
+
+    -webkit-text-fill-color: transparent;
+    background-image: -webkit-linear-gradient(left, #b14a00, #5a32c0 );
+
+    
+
+  }
+
+  .entree
+  {
+    color: #b14a00,
+  }
+  .plat-principal
+  {
+    color:#ae5187;
+  }
+
+  .dessert{
     color:#5a32c0;
   }
   
 
 
-		
-		
-.menu-palette
-{
-	background-color:$bg-3;
-		font-family: $font-3;
-		
-		}
-  .titre-palette
+
+
+  .menu-palette
   {
-     @include titre-principal-margin;
-           -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-image: -webkit-linear-gradient(left, green,$color-4);
-  }
-    .menu-palette .categorie__titre::before {
-      @include categorie-titre;
+   background-color:$bg-3;
+   font-family: $font-3;
+
+ }
+ .titre-palette
+ {
+   @include titre-principal-margin;
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   background-image: -webkit-linear-gradient(left, green,$color-4);
+ }
+ .menu-palette .categorie__titre::before {
+  @include categorie-titre;
   
-        -webkit-text-fill-color: transparent;
-          background-image: -webkit-linear-gradient(left, green,$color-4);
-  }
+  -webkit-text-fill-color: transparent;
+  background-image: -webkit-linear-gradient(left, green,$color-4);
+}
 
-    
 
-    
-    .menu-palette .categorie__titre::after {
-      @include categorie-titre;
+
+
+.menu-palette .categorie__titre::after {
+  @include categorie-titre;
   
-        -webkit-text-fill-color: transparent;
-          background-image: -webkit-linear-gradient(left, $color-4, green );
+  -webkit-text-fill-color: transparent;
+  background-image: -webkit-linear-gradient(left, $color-4, green );
 
-    
 
-    }
+
+}
 
 
 .menu-delice
 {
 	background-color:$bg-4;
-		font-family: $font-4;
-		
-		}
+  font-family: $font-4;
+
+}
 .titre-delice{
-   @include titre-principal-margin;
-  -webkit-background-clip: text;
-   -webkit-text-fill-color: transparent;
-    background-image: -webkit-linear-gradient(left, blue,$color-3);
+ @include titre-principal-margin;
+ -webkit-background-clip: text;
+ -webkit-text-fill-color: transparent;
+ background-image: -webkit-linear-gradient(left, blue,$color-3);
 }
 .menu-delice .categorie__titre::before {
-      @include categorie-titre;
+  @include categorie-titre;
   
-        -webkit-text-fill-color: transparent;
-          background-image: -webkit-linear-gradient(left, blue,$color-3);
+  -webkit-text-fill-color: transparent;
+  background-image: -webkit-linear-gradient(left, blue,$color-3);
 
-    
 
-    }
-    .menu-delice .categorie__titre::after {
-      @include categorie-titre;
+
+}
+.menu-delice .categorie__titre::after {
+  @include categorie-titre;
   
-        -webkit-text-fill-color: transparent;
-          background-image: -webkit-linear-gradient(left, $color-3, blue );
+  -webkit-text-fill-color: transparent;
+  background-image: -webkit-linear-gradient(left, $color-3, blue );
 
-    
 
-    }
+
+}
