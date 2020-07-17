@@ -33,3 +33,29 @@
 		  filter: brightness(110%);}
 
 	}
+@mixin titre-principal-margin
+ {
+  margin:  50px 0;
+ }
+ 
+@mixin after {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  width: 30%;
+  height: 4px;
+   margin-top: 15px;
+ }
+
+            
+
+  
+@mixin categorie-titre
+  {content: '';
+  display: inline-block;
+  vertical-align: middle;
+  width: 30%;
+  height: 4px;
+ 
+    margin-top: 15px;
+}
