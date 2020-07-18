@@ -8,6 +8,12 @@
 			height: 75px;
 			width: 500px;
 			padding-top: 20px;
+			@media screen and (max-width: 768px){
+					width: inherit;
+			}
+			@media screen and (max-width: 375px){
+				width: 300px;}
+		
 		}
 
 
@@ -40,8 +46,6 @@
 			background-color: $background-secondary;
 			display: flex;
 			flex-direction: row;
-
-
 			position: fixed;
 			bottom: 0;
 			right: 0;
@@ -49,9 +53,8 @@
 			width: 100%;
 			justify-content: space-between;
 
-
-
 			border-top: 0.5px solid $color-primary;
+			font-size: auto;
 			&__link{
 
 				margin: 20px 5px;
@@ -63,6 +66,7 @@
 				a {
 					text-decoration: none;
 					@include font;	
+
 
 
 

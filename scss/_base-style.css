@@ -35,11 +35,24 @@
     height: 75px;
     width: 500px;
     padding-top: 20px; }
+    @media screen and (max-width: 768px) {
+      .head-bar img {
+        width: inherit; } }
+    @media screen and (max-width: 375px) {
+      .head-bar img {
+        width: 300px; } }
 
 .fa-music {
   background: -webkit-gradient(linear, left top, left bottom, from(#D88530), to(#F05561));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; }
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
+  .footer h2 {
+    margin-left: 10px; }
 
 .footer-bar {
   background-color: #569C87;
@@ -51,7 +64,8 @@
   left: 0;
   width: 100%;
   justify-content: space-between;
-  border-top: 0.5px solid #FCCB44; }
+  border-top: 0.5px solid #FCCB44;
+  font-size: auto; }
   .footer-bar__link {
     margin: 20px 5px; }
     .footer-bar__link:hover {
@@ -61,6 +75,9 @@
       font-family: 'Montserrat', sans-serif;
       font-size: 30px;
       color: #FCCB44; }
+      @media screen and (max-width: 425px) {
+        .footer-bar__link a {
+          font-size: inherit; } }
 
 * {
   margin: 0; }
@@ -69,7 +86,14 @@ main {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center; }
+  justify-content: center;
+  margin: 10% auto;
+  position: relative; }
+
+.fa-music {
+  background: -webkit-gradient(linear, left top, left bottom, from(#D88530), to(#F05561));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; }
 
 .resto-note {
   box-shadow: 0px 10px 10px 0px #D6D5D4;
@@ -82,8 +106,30 @@ main {
   flex-direction: column;
   margin-left: 75px;
   font-size: 40px;
-  background-color: #FCE1DD;
-  font-size: 50px; }
+  background-color: #FCE1DD; }
+  @media screen and (max-width: 1024px) {
+    .resto-note {
+      width: 350px;
+      height: 450px;
+      font-size: 20px; } }
+  @media screen and (max-width: 1024px) and (max-width: 768px) {
+    .resto-note {
+      width: 250px; } }
+
+  @media screen and (max-width: 1024px) and (max-width: 768px) and (max-width: 425px) {
+    .resto-note {
+      width: 350px;
+      margin-left: 0;
+      font-size: 30px; } }
+
+  @media screen and (max-width: 1024px) and (max-width: 768px) and (max-width: 425px) and (max-width: 375px) {
+    .resto-note {
+      width: 300px; } }
+
+  @media screen and (max-width: 1024px) and (max-width: 768px) and (max-width: 425px) and (max-width: 375px) and (max-width: 320px) {
+    .resto-note {
+      width: 250px; } }
+
   .resto-note a {
     text-decoration: none;
     color: #60393D;
@@ -92,16 +138,22 @@ main {
     .resto-note a:hover {
       transform: scale(1.05);
       filter: brightness(110%); }
-  .resto-note h2 {
-    font-family: "Niconne", cursive;
-    font-size: 50px; }
-  .resto-note h3 {
-    font-family: "Tillana", cursive; }
+    .resto-note a h2 {
+      font-family: "Niconne", cursive;
+      font-size: 50px; }
+      @media screen and (max-width: 768px) {
+        .resto-note a h2 {
+          font-size: 40px; } }
+  @media screen and (max-width: 768px) and (max-width: 425px) {
+    .resto-note a h2 {
+      font-size: 35px; } }
 
-.fa-music {
-  background: -webkit-gradient(linear, left top, left bottom, from(#D88530), to(#F05561));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; }
+    .resto-note a h3 {
+      font-family: "Tillana", cursive;
+      font-size: 50px; }
+      @media screen and (max-width: 425px) {
+        .resto-note a h3 {
+          font-size: 35px; } }
 
 .resto-chic {
   box-shadow: 0px 10px 10px 0px #D6D5D4;
@@ -115,25 +167,52 @@ main {
   margin-left: 75px;
   font-size: 40px;
   background-color: #FEF5FF; }
+  @media screen and (max-width: 1024px) {
+    .resto-chic {
+      width: 350px;
+      height: 450px;
+      font-size: 20px; } }
+  @media screen and (max-width: 1024px) and (max-width: 768px) {
+    .resto-chic {
+      width: 250px; } }
+
+  @media screen and (max-width: 1024px) and (max-width: 768px) and (max-width: 425px) {
+    .resto-chic {
+      width: 350px;
+      margin-left: 0;
+      font-size: 30px; } }
+
+  @media screen and (max-width: 1024px) and (max-width: 768px) and (max-width: 425px) and (max-width: 375px) {
+    .resto-chic {
+      width: 300px; } }
+
+  @media screen and (max-width: 1024px) and (max-width: 768px) and (max-width: 425px) and (max-width: 375px) and (max-width: 320px) {
+    .resto-chic {
+      width: 250px; } }
+
   .resto-chic a {
-    text-decoration: none;
-    transform: scale(0.8);
-    transition: transform 400ms; }
+    text-decoration: none; }
     .resto-chic a h2 {
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
-      background-image: -webkit-linear-gradient(left, red, blue); }
+      background-image: -webkit-linear-gradient(left, red, blue);
+      font-family: "Croissant One", cursive;
+      font-size: 30px; }
+      @media screen and (max-width: 768px) {
+        .resto-chic a h2 {
+          font-size: 20px; } }
     .resto-chic a h3 {
       color: #D88530;
-      font-size: 50px; }
-    .resto-chic a:hover {
-      transform: scale(1.05);
-      filter: brightness(110%); }
-  .resto-chic h2 {
-    font-family: "Croissant One", cursive;
-    font-size: 30px; }
-  .resto-chic h3 {
-    font-family: "Merriweather", serif; }
+      font-size: 50px;
+      font-family: "Merriweather", serif;
+      transform: scale(0.8);
+      transition: transform 400ms; }
+      .resto-chic a h3:hover {
+        transform: scale(1.05);
+        filter: brightness(110%); }
+      @media screen and (max-width: 768px) {
+        .resto-chic a h3 {
+          font-size: 35px; } }
 
 .resto-delice {
   box-shadow: 0px 10px 10px 0px #D6D5D4;
@@ -147,6 +226,29 @@ main {
   margin-left: 75px;
   font-size: 40px;
   background-color: #F9F9F9; }
+  @media screen and (max-width: 1024px) {
+    .resto-delice {
+      width: 350px;
+      height: 450px;
+      font-size: 20px; } }
+  @media screen and (max-width: 1024px) and (max-width: 768px) {
+    .resto-delice {
+      width: 250px; } }
+
+  @media screen and (max-width: 1024px) and (max-width: 768px) and (max-width: 425px) {
+    .resto-delice {
+      width: 350px;
+      margin-left: 0;
+      font-size: 30px; } }
+
+  @media screen and (max-width: 1024px) and (max-width: 768px) and (max-width: 425px) and (max-width: 375px) {
+    .resto-delice {
+      width: 300px; } }
+
+  @media screen and (max-width: 1024px) and (max-width: 768px) and (max-width: 425px) and (max-width: 375px) and (max-width: 320px) {
+    .resto-delice {
+      width: 250px; } }
+
   .resto-delice a {
     text-decoration: none;
     -webkit-background-clip: text;
@@ -160,8 +262,7 @@ main {
   .resto-delice h2 {
     font-family: "Niconne", cursive; }
   .resto-delice h3 {
-    font-family: "Bad Script", cursive;
-    font-size: 50px; }
+    font-family: "Bad Script", cursive; }
 
 .resto-palette {
   box-shadow: 0px 10px 10px 0px #D6D5D4;
@@ -186,6 +287,29 @@ main {
     .resto-palette a:hover {
       transform: scale(1.05);
       filter: brightness(110%); }
+  @media screen and (max-width: 1024px) {
+    .resto-palette {
+      width: 350px;
+      height: 450px;
+      font-size: 20px; } }
+  @media screen and (max-width: 1024px) and (max-width: 768px) {
+    .resto-palette {
+      width: 250px; } }
+
+  @media screen and (max-width: 1024px) and (max-width: 768px) and (max-width: 425px) {
+    .resto-palette {
+      width: 350px;
+      margin-left: 0;
+      font-size: 30px; } }
+
+  @media screen and (max-width: 1024px) and (max-width: 768px) and (max-width: 425px) and (max-width: 375px) {
+    .resto-palette {
+      width: 300px; } }
+
+  @media screen and (max-width: 1024px) and (max-width: 768px) and (max-width: 425px) and (max-width: 375px) and (max-width: 320px) {
+    .resto-palette {
+      width: 250px; } }
+
   .resto-palette h2 {
     font-family: "Kaushan Script", cursive; }
   .resto-palette h3 {
@@ -207,6 +331,9 @@ main {
   font-family: 'Montserrat', sans-serif;
   font-size: 30px;
   color: #FCCB44; }
+  @media screen and (max-width: 425px) {
+    .annonce {
+      font-size: inherit; } }
   .annonce p {
     margin: auto; }
     .annonce p::after {

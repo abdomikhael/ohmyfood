@@ -27,12 +27,25 @@ main{
 	text-align: center;
 	margin :auto;
 	width: 80%;
+  height: 80%;
 	padding-bottom: 50px;
 	
-	font-size: 18px;
+	font-size: 40px;
 	margin-bottom: 100px;
+   @media screen and (max-width: 1024px){
+            font-size: 25px;}
+   @media screen and (max-width: 768px){
+            font-size: 20px;}
+  @media screen and (max-width: 425px){
+            font-size: 10px;}
+   @media screen and (max-width: 375px){
+              font-size :7px;}
+     @media screen and (max-width: 320px){
+              font-size :6px;}
 
-  @include box-shadow}
+
+  @include box-shadow
+}
   .nom
   {
     text-align: center;
@@ -58,7 +71,25 @@ main{
     h3{
 
       width: 60%;
-    }
+      font-size: 30px;
+      margin-bottom: 40px;
+      @media screen and (max-width: 1024px){
+        font-size: 23px;
+        margin-bottom: 30px;
+      }
+      @media screen and (max-width: 768px){
+        font-size: 17px;
+        }   
+         @media screen and (max-width: 425px){
+        font-size: 10px;
+        margin-bottom: 10px;
+        }  
+        @media screen and (max-width: 375px){
+        font-size: 8px;} 
+         @media screen and (max-width: 320px){
+              font-size :7px;}
+
+         }
 
 
   }
@@ -75,24 +106,74 @@ main{
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
-    margin: 20px 100px 20px 100px; 
-    &__nom {
+    width: 80%;
+    text-align: left; 
+    margin: auto;
+    font-size: 20px;
+     @media screen and (max-width: 1024px){
+        margin: auto;
+        text-align: center;
+        font-size: 19px;    
+        width: 90%}
+          @media screen and (max-width: 768px){
+            font-size: 17px;}
+
+      @media screen and (max-width: 425px){
+            font-size: 8px;}
+
+
+      &__nom {
      margin-right: auto;
      margin-bottom: 20px;
-     font-weight: 1;
+     @media screen and (max-width: 425px){
+      margin-bottom: 5px;}
+
+ 
+    
+       @media screen and (max-width: 768px){
+            font-size: 14px;}
+            @media screen and (max-width: 425px){
+              width: 100%;
+               font-size: 8px;
+              
+            }
+             
+
      &--1{
       text-align: left;
-      margin-left: 100px;
+      margin-left: 115px;
       margin-bottom: 20px;
+        font-size: 19px;
+      @media screen and (max-width: 1024px){
+        margin: auto;
+        margin-bottom: 10px;
+        text-align: center;
+        width: 100%;   }
+        @media screen and (max-width: 768px){
+            font-size: 14px;
+            margin-bottom: 10px;}
+         
+          @media screen and (max-width: 425px){
+               font-size: 8px;
+               margin-bottom: 5px;
+              @media screen and (max-width: 375px){
+              font-size :7px;
+               @media screen and (max-width: 320px){
+              font-size :6px;}
+
+            }
+
+
+            }
+
+        }
+   
     }
-  }
+
 
 }
-.categorie-plat--1
-{
-  margin: 20px 0;
-  font-weight: 1;
-}
+
+
 
 
 
@@ -153,7 +234,7 @@ main{
        font-family: $font-2;
       }
      .menu-note .categorie__titre::before {
-      @include categorie-titre;
+      @include after;
 
       background-color: $color-1;
 
@@ -161,7 +242,7 @@ main{
 
     }
     .menu-note .categorie__titre::after {
-      @include categorie-titre;
+      @include after;
       background-color: $color-1;
 
     }
@@ -181,7 +262,7 @@ main{
 
   }
   .menu-chic .categorie__titre::before {
-    @include categorie-titre;
+    @include after;
 
     -webkit-text-fill-color: transparent;
     background-image: -webkit-linear-gradient(left,  #5a32c0, #b14a00);
@@ -190,7 +271,7 @@ main{
 
   }
   .menu-chic .categorie__titre::after {
-    @include categorie-titre;
+    @include after;
 
     -webkit-text-fill-color: transparent;
     background-image: -webkit-linear-gradient(left, #b14a00, #5a32c0 );
@@ -230,7 +311,7 @@ main{
    background-image: -webkit-linear-gradient(left, green,$color-4);
  }
  .menu-palette .categorie__titre::before {
-  @include categorie-titre;
+  @include after;
   
   -webkit-text-fill-color: transparent;
   background-image: -webkit-linear-gradient(left, green,$color-4);
@@ -240,7 +321,7 @@ main{
 
 
 .menu-palette .categorie__titre::after {
-  @include categorie-titre;
+  @include after;
   
   -webkit-text-fill-color: transparent;
   background-image: -webkit-linear-gradient(left, $color-4, green );
@@ -263,7 +344,7 @@ main{
  background-image: -webkit-linear-gradient(left, blue,$color-3);
 }
 .menu-delice .categorie__titre::before {
-  @include categorie-titre;
+  @include after;
   
   -webkit-text-fill-color: transparent;
   background-image: -webkit-linear-gradient(left, blue,$color-3);
@@ -272,7 +353,7 @@ main{
 
 }
 .menu-delice .categorie__titre::after {
-  @include categorie-titre;
+  @include after;
   
   -webkit-text-fill-color: transparent;
   background-image: -webkit-linear-gradient(left, $color-3, blue );

@@ -39,53 +39,73 @@ main
 	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: center;
+	margin: 10% auto;
+	position: relative;
 
 }
-
-.resto-note{
-	@include box-shadow;
-	@include card-style;
-
-	a{
-		text-decoration: none;
-		color:$color-1;
-		@include hover;
-	}
-	background-color:$bg-1;
-	h2{font-family: $font-1;
-		font-size: 50px;}
-		h3{font-family: $font-5;	}
-		font-size:50px;}
-		.fa-music{
+.fa-music{
 			background: -webkit-gradient(linear, left top, left bottom, from($color-2), to($color-21));
 			-webkit-background-clip: text;
 			-webkit-text-fill-color: transparent;
 
 
 		}
+
+
+.resto-note{
+	@include box-shadow;
+	@include card-style;
+	background-color:$bg-1;
+
+	a{
+		text-decoration: none;
+		color:$color-1;
+		@include hover;
+
+		h2{font-family: $font-1;
+		font-size: 50px;
+	
+		@media screen and (max-width: 768px){
+			font-size: 40px;
+			@media screen and (max-width: 425px){
+							font-size: 35px;}
+		}	}
+		h3{font-family: $font-5;	
+		font-size:50px;
+		@media screen and (max-width: 425px){
+							font-size: 35px;}
 		
+	}
+	}
 
+
+	}
 		
-
-
-		.resto-chic{
+.resto-chic{
 			@include box-shadow;
 			@include card-style;
+			background-color:$bg-2;
 			a{
 				text-decoration: none;
-				h2{	-webkit-background-clip: text;
-					-webkit-text-fill-color: transparent;
-					background-image: -webkit-linear-gradient(left,  red, blue);}
-
+				h2{		-webkit-background-clip: text;
+						-webkit-text-fill-color: transparent;
+						background-image: -webkit-linear-gradient(left,  red, blue);
+						font-family: $font-2;
+						font-size: 30px;
+						@media screen and (max-width: 768px){
+							font-size: 20px;}
+						
+					}
 					h3{	color:$color-2;
-						font-size:50px;}
+						font-size:50px;
+						font-family: $font-6;
 						@include hover;
+						@media screen and (max-width: 768px){
+							font-size: 35px;}
+				
 					}
-					background-color:$bg-2;
-					h2{font-family: $font-2;
-						font-size: 30px;}
-						h3{font-family: $font-6}
 					}
+						}
 
 
 				
@@ -102,8 +122,9 @@ main
 					background-color:$bg-3;
 					h2{font-family:$font-3;}
 					h3{font-family: $font-7;
-						font-size:50px;
+					
 					}
+
 				}
 				.resto-palette{
 					@include box-shadow;
@@ -121,8 +142,9 @@ main
 					h2{font-family:$font-4;}
 					h3{font-family: $font-7;
 						font-size:50px;}
-
 					}
+
+					
 
 					.annonce 
 					{
@@ -150,6 +172,7 @@ main
 								animation: ellipsis steps(4) 1.3s infinite;}
 							}
 						}
+
 
 
 

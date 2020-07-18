@@ -1,0 +1,26 @@
+@import'_variable.scss','_mixin.scss','_layout.scss';
+*{
+	margin: 0;
+}
+main{
+	display: flex;
+	flex-direction: column;
+
+background-color: $background-secondary;
+color:$color-primary ;
+justify-content: center;
+text-align: center;
+font-family: $font-primary;
+
+
+
+
+}
+ main p{
+	width: 70%;
+	text-align: left;
+	margin: auto;
+	margin-bottom: 2%;
+
+
+}
