@@ -1,4 +1,5 @@
 
+@import'_variable.scss','_mixin.scss','_layout.scss';
 
 @keyframes ellipsis {
 	0% {
@@ -22,7 +23,7 @@
 	90% { transform: translate(1px, 2px) rotate(0deg); }
 	100% { transform: translate(1px, -2px) rotate(-1deg); }
 }
-@import'_variable.scss','_mixin.scss','_layout.scss';
+
 *
 {
 	margin : 0;
@@ -63,115 +64,109 @@ main
 		@include hover;
 
 		h2{font-family: $font-1;
-		font-size: 50px;
-	
-		@media screen and (max-width: 768px){
-			font-size: 40px;
-			@media screen and (max-width: 425px){
-							font-size: 35px;}
-		}	}
-		h3{font-family: $font-5;	
-		font-size:50px;
-		@media screen and (max-width: 425px){
-							font-size: 35px;}
+		}
 		
-	}
-	}
+		h3{font-family: $font-5;	
+		}
+	}	
 
 
 	}
 		
 .resto-chic{
-			@include box-shadow;
-			@include card-style;
-			background-color:$bg-2;
-			a{
-				text-decoration: none;
-				h2{		-webkit-background-clip: text;
-						-webkit-text-fill-color: transparent;
-						background-image: -webkit-linear-gradient(left,  red, blue);
-						font-family: $font-2;
-						font-size: 30px;
-						@media screen and (max-width: 768px){
-							font-size: 20px;}
-						
-					}
-					h3{	color:$color-2;
-						font-size:50px;
-						font-family: $font-6;
-						@include hover;
-						@media screen and (max-width: 768px){
-							font-size: 35px;}
-				
-					}
-					}
-						}
+	@include box-shadow;
+	@include card-style;
+
+	a{
+		text-decoration: none;
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-image: -webkit-linear-gradient(left,  red, blue);
+
+		@include hover;
+	}
+	background-color:$bg-2;
+	h2{		
+		font-family: $font-2;	
+	}
+	h3{	color:$color-2;
+		font-family: $font-6;
+	}
+
+}
 
 
 				
-				.resto-delice{
-					@include box-shadow;
-					@include card-style;
-					a{
-						text-decoration: none;
-						-webkit-background-clip: text;
-						-webkit-text-fill-color: transparent;
-						background-image: -webkit-linear-gradient(left, blue,$color-3);
-						@include hover;
-					}
-					background-color:$bg-3;
-					h2{font-family:$font-3;}
-					h3{font-family: $font-7;
-					
-					}
+.resto-delice{
+	@include box-shadow;
+	@include card-style;
+	a{
+		text-decoration: none;
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-image: -webkit-linear-gradient(left, blue,$color-3);
+		@include hover;
+	}
+	background-color:$bg-3;
+	h2{font-family:$font-3;}
+	h3{font-family: $font-7;
 
+	}
+
+}
+.resto-palette{
+	@include box-shadow;
+	@include card-style;
+	a{
+		text-decoration: none;
+		text-decoration: none;
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-image: -webkit-linear-gradient(left, green,$color-4);
+		@include hover;
+
+	}
+
+	background-color:$bg-4;
+	h2{font-family:$font-4;}
+	h3{font-family: $font-7;
+		
+	}
+}
+
+
+
+	.annonce 
+	{
+		@include box-shadow;
+		height: 50px;
+		width: 300px;
+		border-radius: 15px;
+		position: relative;
+
+		display: flex;
+		justify-content: center;
+
+		margin :100px auto;
+		font-size: 30px;
+		background-color: $background-secondary;
+
+		border: 0.3px solid $color-primary;
+		@media screen and (min-width: 2560px){
+			height :150px;
+			width: 1000px;
+			margin: 300px auto;}
+
+		@include font;
+			p {
+				margin: auto;
+				&::after{	content: "\2026";
+					position: absolute;
+					padding-left: 5px;
+					overflow: hidden;
+					animation: ellipsis steps(4) 1.3s infinite;}
 				}
-				.resto-palette{
-					@include box-shadow;
-					a{
-						text-decoration: none;
-						text-decoration: none;
-						-webkit-background-clip: text;
-						-webkit-text-fill-color: transparent;
-						background-image: -webkit-linear-gradient(left, green,$color-4);
-						@include hover;
-
-					}
-					@include card-style;
-					background-color:$bg-4;
-					h2{font-family:$font-4;}
-					h3{font-family: $font-7;
-						font-size:50px;}
-					}
-
-					
-
-					.annonce 
-					{
-						@include box-shadow;
-						height: 50px;
-						width: 300px;
-						border-radius: 15px;
-						position: relative;
-
-						display: flex;
-						justify-content: center;
-
-						margin :100px auto;
-						font-size: 30px;
-						background-color: $background-secondary;
-
-						border: 0.3px solid $color-primary;
-						@include font;
-						p {
-							margin: auto;
-							&::after{	content: "\2026";
-								position: absolute;
-								padding-left: 5px;
-								overflow: hidden;
-								animation: ellipsis steps(4) 1.3s infinite;}
-							}
-						}
+			}
 
 
 

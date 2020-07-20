@@ -4,10 +4,17 @@
 		display: flex;
 		justify-content: center;
 		height:100px;
+		@media screen and (min-width: 2560px){
+		height:  300px;}
 		img {
 			height: 75px;
 			width: 500px;
 			padding-top: 20px;
+			
+			@media screen and (min-width: 2560px){
+				height: 200px;
+    		width: 1000px;
+    		padding-top: 70px;}
 			@media screen and (max-width: 768px){
 					width: inherit;
 			}

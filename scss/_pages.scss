@@ -1,0 +1,136 @@
+@import'_variable.scss','_mixin.scss','_layout.scss';
+.menu-note{
+	background-color:$bg-1;
+	font-family: $font-2;
+}
+.menu-note .categorie__titre::before {
+	@include after;
+
+	background-color: $color-1;
+
+
+
+}
+.menu-note .categorie__titre::after {
+	@include after;
+	background-color: $color-1;
+
+}
+
+.menu-chic
+{
+	background-color:$bg-2;
+	font-family: $font-2;
+
+}
+.titre-chic{
+	@include titre-principal-margin;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-image: -webkit-linear-gradient(left,  red, blue);
+
+
+}
+.menu-chic .categorie__titre::before {
+	@include after;
+
+	-webkit-text-fill-color: transparent;
+	background-image: -webkit-linear-gradient(left,  #5a32c0, #b14a00);
+
+
+
+}
+.menu-chic .categorie__titre::after {
+	@include after;
+
+	-webkit-text-fill-color: transparent;
+	background-image: -webkit-linear-gradient(left, #b14a00, #5a32c0 );
+
+
+
+}
+
+.entree
+{
+	color: #b14a00,
+}
+.plat-principal
+{
+	color:#ae5187;
+}
+
+.dessert{
+	color:#5a32c0;
+}
+
+
+
+
+
+.menu-palette
+{
+	background-color:$bg-3;
+	font-family: $font-3;
+
+}
+.titre-palette
+{
+	@include titre-principal-margin;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-image: -webkit-linear-gradient(left, green,$color-4);
+}
+.menu-palette .categorie__titre::before {
+	@include after;
+
+	-webkit-text-fill-color: transparent;
+	background-image: -webkit-linear-gradient(left, green,$color-4);
+}
+
+
+
+
+.menu-palette .categorie__titre::after {
+	@include after;
+
+	-webkit-text-fill-color: transparent;
+	background-image: -webkit-linear-gradient(left, $color-4, green );
+
+
+
+}
+
+
+.menu-delice
+{
+	background-color:$bg-4;
+	font-family: $font-4;
+
+}
+.titre-delice{
+	@include titre-principal-margin;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-image: -webkit-linear-gradient(left, blue,$color-3);
+}
+.menu-delice .categorie__titre::before {
+	@include after;
+
+	-webkit-text-fill-color: transparent;
+	background-image: -webkit-linear-gradient(left, blue,$color-3);
+
+
+
+}
+.menu-delice .categorie__titre::after {
+	@include after;
+
+	-webkit-text-fill-color: transparent;
+	background-image: -webkit-linear-gradient(left, $color-3, blue );
+
+
+
+}
+
+
+/*# sourceMappingURL=_mixin.css.map */
