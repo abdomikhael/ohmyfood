@@ -248,8 +248,8 @@
   color: #5a32c0; }
 
 .menu-palette {
-  background-color: #F9F9F9;
-  font-family: "Niconne", cursive; }
+  background-color: #FDFFFD;
+  font-family: "Kaushan Script", cursive; }
 
 .titre-palette {
   margin: 50px 0;
@@ -308,8 +308,8 @@
       margin-top: 6px; } }
 
 .menu-delice {
-  background-color: #FDFFFD;
-  font-family: "Kaushan Script", cursive; }
+  background-color: #F9F9F9;
+  font-family: "Niconne", cursive; }
 
 .titre-delice {
   margin: 50px 0;
