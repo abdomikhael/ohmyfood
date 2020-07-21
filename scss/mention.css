@@ -73,8 +73,17 @@ main {
   justify-content: center;
   text-align: center;
   font-family: "Montserrat", sans-serif;
-  font-size: -webkit-xxx-large;
-  margin-bottom: 6%; }
+  font-size: 18px;
+  margin-bottom: 5%; }
+  @media screen and (min-width: 1024px) {
+    main {
+      font-size: -webkit-xxx-large; } }
+  @media screen and (maxwidth: 1024px) {
+    main {
+      font-size: -webkit-large; } }
+  @media screen and (min-width: 420px) {
+    main {
+      font-size: -webkit-small; } }
 
 main p {
   width: 70%;

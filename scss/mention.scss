@@ -11,14 +11,21 @@ color:$color-primary ;
 justify-content: center;
 text-align: center;
 font-family: $font-primary;
-	font-size:  -webkit-xxx-large;
-	margin-bottom: 6%;
+	font-size:  18px;
+	margin-bottom: 5%;
+
+	@media screen and (min-width: 1024px){
+		font-size: -webkit-xxx-large;
+	}
     
+@media screen and (maxwidth: 1024px){
+	font-size:  -webkit-large;}
+	@media screen and (min-width: 420px){
+		font-size:  -webkit-small;}
+
 
 
  
-
-
 
 }
  main p{
