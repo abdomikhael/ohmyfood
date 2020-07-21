@@ -144,7 +144,7 @@ main {
     transform: scale(0.8);
     transition: transform 400ms; }
     .resto-note a:hover {
-      transform: scale(1.05);
+      transform: scale(1.03);
       filter: brightness(110%); }
     .resto-note a h2 {
       font-family: "Niconne", cursive; }
@@ -191,7 +191,7 @@ main {
     transform: scale(0.8);
     transition: transform 400ms; }
     .resto-chic a:hover {
-      transform: scale(1.05);
+      transform: scale(1.03);
       filter: brightness(110%); }
   .resto-chic h2 {
     font-family: "Croissant One", cursive; }
@@ -239,7 +239,7 @@ main {
     transform: scale(0.8);
     transition: transform 400ms; }
     .resto-delice a:hover {
-      transform: scale(1.05);
+      transform: scale(1.03);
       filter: brightness(110%); }
   .resto-delice h2 {
     font-family: "Niconne", cursive; }
@@ -280,14 +280,13 @@ main {
       height: 350px; } }
   .resto-palette a {
     text-decoration: none;
-    text-decoration: none;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-image: -webkit-linear-gradient(left, green, #C0E0BA);
     transform: scale(0.8);
     transition: transform 400ms; }
     .resto-palette a:hover {
-      transform: scale(1.05);
+      transform: scale(1.03);
       filter: brightness(110%); }
   .resto-palette h2 {
     font-family: "Kaushan Script", cursive; }

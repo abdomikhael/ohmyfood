@@ -446,7 +446,7 @@ main {
   margin: auto; }
   .categorie__titre h3 {
     width: 60%;
-    font-size: 30px;
+    font-size: 25px;
     margin-bottom: 40px; }
     @media screen and (min-width: 2560px) {
       .categorie__titre h3 {
@@ -477,7 +477,7 @@ main {
   width: 80%;
   text-align: left;
   margin: auto;
-  font-size: 20px; }
+  font-size: 16px; }
   @media screen and (min-width: 2560px) {
     .categorie-plat {
       font-size: 35px; } }
@@ -485,30 +485,22 @@ main {
     .categorie-plat {
       margin: auto;
       text-align: center;
-      font-size: 19px;
+      font-size: 12px;
       width: 90%; } }
   @media screen and (max-width: 768px) {
     .categorie-plat {
-      font-size: 17px; } }
-  @media screen and (max-width: 425px) {
+      font-size: 10px; } }
+  @media screen and (max-width: 572px) {
     .categorie-plat {
       font-size: 8px; } }
   .categorie-plat__nom {
     margin-right: auto;
     margin-bottom: 20px;
     width: 90%;
-    text-align: left;
-    font-size: 16px; }
-    @media screen and (max-width: 1024px) {
-      .categorie-plat__nom {
-        font-size: 12px; } }
-    @media screen and (max-width: 768px) {
-      .categorie-plat__nom {
-        font-size: 10px; } }
+    text-align: left; }
     @media screen and (max-width: 572px) {
       .categorie-plat__nom {
         width: 100%;
-        font-size: 8px;
         text-align: center; } }
     @media screen and (max-width: 425px) {
       .categorie-plat__nom {

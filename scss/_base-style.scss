@@ -82,6 +82,8 @@ main
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
 		background-image: -webkit-linear-gradient(left,  red, blue);
+	
+
 
 		@include hover;
 	}
@@ -118,7 +120,6 @@ main
 	@include box-shadow;
 	@include card-style;
 	a{
-		text-decoration: none;
 		text-decoration: none;
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
