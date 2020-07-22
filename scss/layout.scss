@@ -1,12 +1,12 @@
 @import 'variable.scss','mixin.scss';
 .head-bar{
-		background-color: $background-secondary;
-		display: flex;
-		justify-content: center;
-		height:100px;
-		@media screen and (min-width: 2560px){
+	background-color: $background-secondary;
+	display: flex;
+	justify-content: center;
+	height:100px;
+	@media screen and (min-width: 2560px){
 		height:  300px;}
-		a h2
+		a 
 		{
 			text-decoration: none;
 			color: $color-primary;
@@ -17,13 +17,13 @@
 			font-size: 40px;
 			
 			@media screen and (min-width: 2560px){
-		font-size: 120px;
-	}
-	@media screen and (max-width: 425px){
-		font-size: 25px;
-	}
-		
-	}
+				font-size: 120px;
+			}
+			@media screen and (max-width: 425px){
+				font-size: 25px;
+			}
+
+		}
 
 
 
