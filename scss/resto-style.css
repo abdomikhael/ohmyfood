@@ -6,21 +6,18 @@
   @media screen and (min-width: 2560px) {
     .head-bar {
       height: 300px; } }
-  .head-bar img {
-    height: 75px;
-    width: 500px;
-    padding-top: 20px; }
+  .head-bar a {
+    text-decoration: none;
+    color: #FCCB44;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: 75px; }
     @media screen and (min-width: 2560px) {
-      .head-bar img {
-        height: 200px;
-        width: 1000px;
-        padding-top: 70px; } }
-    @media screen and (max-width: 768px) {
-      .head-bar img {
-        width: inherit; } }
-    @media screen and (max-width: 375px) {
-      .head-bar img {
-        width: 300px; } }
+      .head-bar a {
+        font-size: 200px; } }
+    @media screen and (max-width: 425px) {
+      .head-bar a {
+        font-size: 55px; } }
 
 .fa-music {
   background: -webkit-gradient(linear, left top, left bottom, from(#D88530), to(#F05561));
@@ -70,21 +67,18 @@
   @media screen and (min-width: 2560px) {
     .head-bar {
       height: 300px; } }
-  .head-bar img {
-    height: 75px;
-    width: 500px;
-    padding-top: 20px; }
+  .head-bar a {
+    text-decoration: none;
+    color: #FCCB44;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: 75px; }
     @media screen and (min-width: 2560px) {
-      .head-bar img {
-        height: 200px;
-        width: 1000px;
-        padding-top: 70px; } }
-    @media screen and (max-width: 768px) {
-      .head-bar img {
-        width: inherit; } }
-    @media screen and (max-width: 375px) {
-      .head-bar img {
-        width: 300px; } }
+      .head-bar a {
+        font-size: 200px; } }
+    @media screen and (max-width: 425px) {
+      .head-bar a {
+        font-size: 55px; } }
 
 .fa-music {
   background: -webkit-gradient(linear, left top, left bottom, from(#D88530), to(#F05561));
