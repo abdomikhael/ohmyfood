@@ -6,21 +6,18 @@
   @media screen and (min-width: 2560px) {
     .head-bar {
       height: 300px; } }
-  .head-bar img {
-    height: 75px;
-    width: 500px;
-    padding-top: 20px; }
+  .head-bar a {
+    text-decoration: none;
+    color: #FCCB44;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: 40px; }
     @media screen and (min-width: 2560px) {
-      .head-bar img {
-        height: 200px;
-        width: 1000px;
-        padding-top: 70px; } }
-    @media screen and (max-width: 768px) {
-      .head-bar img {
-        width: inherit; } }
-    @media screen and (max-width: 375px) {
-      .head-bar img {
-        width: 300px; } }
+      .head-bar a {
+        font-size: 120px; } }
+    @media screen and (max-width: 425px) {
+      .head-bar a {
+        font-size: 25px; } }
 
 .fa-music {
   background: -webkit-gradient(linear, left top, left bottom, from(#D88530), to(#F05561));
@@ -44,8 +41,7 @@
   left: 0;
   width: 100%;
   justify-content: space-between;
-  border-top: 0.5px solid #FCCB44;
-  font-size: auto; }
+  border-top: 0.5px solid #FCCB44; }
   .footer-bar__link {
     margin: 20px 5px; }
     .footer-bar__link:hover {

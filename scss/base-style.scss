@@ -179,7 +179,7 @@ main
 			margin: 300px auto;}
 
 		@include font;
-			p {
+			h4 {
 				margin: auto;
 				&::after{	content: "\2026";
 					position: absolute;
