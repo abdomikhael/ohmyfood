@@ -79,21 +79,26 @@ main
 
 	a{
 		text-decoration: none;
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-		background-image: -webkit-linear-gradient(left,  red, blue);
+
+		@include hover;
+		h2{
+			font-family: $font-2;
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+			background-image: -webkit-linear-gradient(165deg, #e38a12 16%, #8f5aff 82%);
+
+		}
+	
+	h3{		font-family: $font-6;
+			color: #e38a12;
+		}
+
 	
 
 
-		@include hover;
 	}
 	background-color:$bg-2;
-	h2{		
-		font-family: $font-2;	
-	}
-	h3{	color:$color-2;
-		font-family: $font-6;
-	}
+
 
 }
 
@@ -102,37 +107,52 @@ main
 .resto-delice{
 	@include box-shadow;
 	@include card-style;
-	a{
-		text-decoration: none;
+	background-color:$bg-3;
+	a{ 
+			text-decoration: none;
+		@include hover;
+		h2
+
+		{font-family:$font-3;
+	
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
-		background-image: -webkit-linear-gradient(left, blue,$color-3);
-		@include hover;
+		background-image: -webkit-linear-gradient(165deg,  $color-3 16%,blue 82%);
 	}
-	background-color:$bg-3;
-	h2{font-family:$font-3;}
-	h3{font-family: $font-7;
+		h3{font-family: $font-7;
+			color: $color-3;
 
 	}
+		
 
 }
+
+}
+
 .resto-palette{
 	@include box-shadow;
 	@include card-style;
+		background-color:$bg-4;
 	a{
+
 		text-decoration: none;
+			@include hover;
+			h2{font-family:$font-4;
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
-		background-image: -webkit-linear-gradient(left, green,$color-4);
-		@include hover;
-
-	}
-
-	background-color:$bg-4;
-	h2{font-family:$font-4;}
-	h3{font-family: $font-7;
+		background-image: -webkit-linear-gradient(165deg,$color-4 16%, green 82%);
+		}
+		h3{font-family: $font-7;
+			color: $color-4;
 		
 	}
+	
+
+	}
+
+
+	
+	
 }
 
 

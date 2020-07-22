@@ -25,10 +25,14 @@
 }
 .titre-chic{
 	@include titre-principal-margin;
-	-webkit-background-clip: text;
+	h1
+	{-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
-	background-image: -webkit-linear-gradient(left,  red, blue);
+	background-image: -webkit-linear-gradient(165deg, #e38a12 16%, #8f5aff 82%);}
 
+
+
+	
 
 }
 .menu-chic .categorie__titre::before {
@@ -76,16 +80,20 @@
 .titre-palette
 {
 	@include titre-principal-margin;
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-	background-image: -webkit-linear-gradient(left, green,$color-4);
+	h1
+	{
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-image: -webkit-linear-gradient(165deg,$color-4 16%, green 82%);
+}
 }
 .menu-palette .categorie__titre::before {
 	@include after;
 
 	-webkit-text-fill-color: transparent;
-	background-image: -webkit-linear-gradient(left, green,$color-4);
+	background-image: -webkit-linear-gradient(left,$color-4 , green );
 }
+
 
 
 
@@ -94,7 +102,7 @@
 	@include after;
 
 	-webkit-text-fill-color: transparent;
-	background-image: -webkit-linear-gradient(left, $color-4, green );
+	background-image: -webkit-linear-gradient(left,green ,  $color-4  );
 
 
 
@@ -109,9 +117,11 @@
 }
 .titre-delice{
 	@include titre-principal-margin;
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-	background-image: -webkit-linear-gradient(left, blue,$color-3);
+	h1
+	{	-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-image: -webkit-linear-gradient(165deg,  $color-3 16%,blue 82%);
+}
 }
 .menu-delice .categorie__titre::before {
 	@include after;

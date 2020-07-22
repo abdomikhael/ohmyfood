@@ -183,10 +183,11 @@
   font-family: "Croissant One", cursive; }
 
 .titre-chic {
-  margin: 50px 0;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-image: -webkit-linear-gradient(left, red, blue); }
+  margin: 50px 0; }
+  .titre-chic h1 {
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: -webkit-linear-gradient(165deg, #e38a12 16%, #8f5aff 82%); }
 
 .menu-chic .categorie__titre::before {
   content: '';
@@ -252,10 +253,11 @@
   font-family: "Kaushan Script", cursive; }
 
 .titre-palette {
-  margin: 50px 0;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-image: -webkit-linear-gradient(left, green, #C0E0BA); }
+  margin: 50px 0; }
+  .titre-palette h1 {
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: -webkit-linear-gradient(165deg, #42d691 16%, green 82%); }
 
 .menu-palette .categorie__titre::before {
   content: '';
@@ -265,7 +267,7 @@
   height: 4px;
   margin-top: 15px;
   -webkit-text-fill-color: transparent;
-  background-image: -webkit-linear-gradient(left, green, #C0E0BA); }
+  background-image: -webkit-linear-gradient(left, #42d691, green); }
   @media screen and (min-width: 2560px) {
     .menu-palette .categorie__titre::before {
       margin-top: 40px; } }
@@ -290,7 +292,7 @@
   height: 4px;
   margin-top: 15px;
   -webkit-text-fill-color: transparent;
-  background-image: -webkit-linear-gradient(left, #C0E0BA, green); }
+  background-image: -webkit-linear-gradient(left, green, #42d691); }
   @media screen and (min-width: 2560px) {
     .menu-palette .categorie__titre::after {
       margin-top: 40px; } }
@@ -312,10 +314,11 @@
   font-family: "Niconne", cursive; }
 
 .titre-delice {
-  margin: 50px 0;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-image: -webkit-linear-gradient(left, blue, #4791F3); }
+  margin: 50px 0; }
+  .titre-delice h1 {
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: -webkit-linear-gradient(165deg, #4791F3 16%, blue 82%); }
 
 .menu-delice .categorie__titre::before {
   content: '';

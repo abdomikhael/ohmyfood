@@ -115,11 +115,11 @@ main {
   margin: 40px;
   display: flex;
   flex-direction: column;
-  font-size: 38px;
+  font-size: 20px;
   background-color: #FCE1DD; }
   @media screen and (min-width: 2560px) {
     .resto-note {
-      font-size: 70px;
+      font-size: 46px;
       width: 800px;
       height: 1000px;
       margin: 100px; } }
@@ -160,11 +160,11 @@ main {
   margin: 40px;
   display: flex;
   flex-direction: column;
-  font-size: 38px;
+  font-size: 20px;
   background-color: #FEF5FF; }
   @media screen and (min-width: 2560px) {
     .resto-chic {
-      font-size: 70px;
+      font-size: 46px;
       width: 800px;
       height: 1000px;
       margin: 100px; } }
@@ -185,19 +185,19 @@ main {
       height: 350px; } }
   .resto-chic a {
     text-decoration: none;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-image: -webkit-linear-gradient(left, red, blue);
     transform: scale(0.8);
     transition: transform 400ms; }
     .resto-chic a:hover {
       transform: scale(1.03);
       filter: brightness(110%); }
-  .resto-chic h2 {
-    font-family: "Croissant One", cursive; }
-  .resto-chic h3 {
-    color: #D88530;
-    font-family: "Merriweather", serif; }
+    .resto-chic a h2 {
+      font-family: "Croissant One", cursive;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-image: -webkit-linear-gradient(165deg, #e38a12 16%, #8f5aff 82%); }
+    .resto-chic a h3 {
+      font-family: "Merriweather", serif;
+      color: #e38a12; }
 
 .resto-delice {
   box-shadow: 0px 10px 10px 0px #D6D5D4;
@@ -208,11 +208,11 @@ main {
   margin: 40px;
   display: flex;
   flex-direction: column;
-  font-size: 38px;
+  font-size: 20px;
   background-color: #F9F9F9; }
   @media screen and (min-width: 2560px) {
     .resto-delice {
-      font-size: 70px;
+      font-size: 46px;
       width: 800px;
       height: 1000px;
       margin: 100px; } }
@@ -233,18 +233,19 @@ main {
       height: 350px; } }
   .resto-delice a {
     text-decoration: none;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-image: -webkit-linear-gradient(left, blue, #4791F3);
     transform: scale(0.8);
     transition: transform 400ms; }
     .resto-delice a:hover {
       transform: scale(1.03);
       filter: brightness(110%); }
-  .resto-delice h2 {
-    font-family: "Niconne", cursive; }
-  .resto-delice h3 {
-    font-family: "Bad Script", cursive; }
+    .resto-delice a h2 {
+      font-family: "Niconne", cursive;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-image: -webkit-linear-gradient(165deg, #4791F3 16%, blue 82%); }
+    .resto-delice a h3 {
+      font-family: "Bad Script", cursive;
+      color: #4791F3; }
 
 .resto-palette {
   box-shadow: 0px 10px 10px 0px #D6D5D4;
@@ -255,11 +256,11 @@ main {
   margin: 40px;
   display: flex;
   flex-direction: column;
-  font-size: 38px;
+  font-size: 20px;
   background-color: #FDFFFD; }
   @media screen and (min-width: 2560px) {
     .resto-palette {
-      font-size: 70px;
+      font-size: 46px;
       width: 800px;
       height: 1000px;
       margin: 100px; } }
@@ -280,18 +281,19 @@ main {
       height: 350px; } }
   .resto-palette a {
     text-decoration: none;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-image: -webkit-linear-gradient(left, green, #C0E0BA);
     transform: scale(0.8);
     transition: transform 400ms; }
     .resto-palette a:hover {
       transform: scale(1.03);
       filter: brightness(110%); }
-  .resto-palette h2 {
-    font-family: "Kaushan Script", cursive; }
-  .resto-palette h3 {
-    font-family: "Bad Script", cursive; }
+    .resto-palette a h2 {
+      font-family: "Kaushan Script", cursive;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-image: -webkit-linear-gradient(165deg, #42d691 16%, green 82%); }
+    .resto-palette a h3 {
+      font-family: "Bad Script", cursive;
+      color: #42d691; }
 
 .annonce {
   box-shadow: 0px 10px 10px 0px #D6D5D4;
