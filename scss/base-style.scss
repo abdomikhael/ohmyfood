@@ -55,8 +55,7 @@ main
 
 .resto-note{
 	@include box-shadow;
-	@include card-style;
-	background-color:$bg-1;
+	@include card-style($bg-1);
 
 	a{
 		text-decoration: none;
@@ -75,7 +74,7 @@ main
 		
 .resto-chic{
 	@include box-shadow;
-	@include card-style;
+	@include card-style($bg-2);
 
 	a{
 		text-decoration: none;
@@ -97,7 +96,7 @@ main
 
 
 	}
-	background-color:$bg-2;
+	
 
 
 }
@@ -106,8 +105,7 @@ main
 				
 .resto-delice{
 	@include box-shadow;
-	@include card-style;
-	background-color:$bg-3;
+	@include card-style($bg-3);
 	a{ 
 			text-decoration: none;
 		@include hover;
@@ -131,8 +129,7 @@ main
 
 .resto-palette{
 	@include box-shadow;
-	@include card-style;
-		background-color:$bg-4;
+	@include card-style($bg-4);
 	a{
 
 		text-decoration: none;
