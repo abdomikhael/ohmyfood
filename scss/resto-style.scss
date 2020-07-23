@@ -14,7 +14,8 @@ body{
 
 }
 
-main{
+main
+{
 	text-align: center;
 	margin :auto;
 	width: 80%;
@@ -43,15 +44,13 @@ main{
     font-family:$font-primary;
     margin:  50px 0;
 
-    
-
     }
 
 
-.titre-principal{
+.titre-principal
+{
 @include titre-principal-margin;
-
-    }
+  }
 
 .categorie__titre 
 {
