@@ -1,38 +1,13 @@
 
 @import'variable.scss','mixin.scss','layout.scss';
 
-@keyframes ellipsis {
-	0% {
-		width: 0;
-	}
 
-	100% {
-		width: 0.9em;
-	}
-}
-@keyframes shake {
-	0% { transform: translate(1px, 1px) rotate(0deg); }
-	10% { transform: translate(-1px, -2px) rotate(-1deg); }
-	20% { transform: translate(-3px, 0px) rotate(1deg); }
-	30% { transform: translate(3px, 2px) rotate(0deg); }
-	40% { transform: translate(1px, -1px) rotate(1deg); }
-	50% { transform: translate(-1px, 2px) rotate(-1deg); }
-	60% { transform: translate(-3px, 1px) rotate(0deg); }
-	70% { transform: translate(3px, 1px) rotate(-1deg); }
-	80% { transform: translate(-1px, -1px) rotate(1deg); }
-	90% { transform: translate(1px, 2px) rotate(0deg); }
-	100% { transform: translate(1px, -2px) rotate(-1deg); }
-}
 
 *
 {
 	margin : 0;
 
 }
-
-
-
-
 
 main 
 {
@@ -44,16 +19,15 @@ main
 	position: relative;
 
 }
-.fa-music{
-			background: -webkit-gradient(linear, left top, left bottom, from($color-2), to($color-21));
-			-webkit-background-clip: text;
-			-webkit-text-fill-color: transparent;
+.fa-music
+{
+	background: -webkit-gradient(linear, left top, left bottom, from($color-2), to($color-21));
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
 
-
-		}
-
-
-.resto-note{
+.resto-note
+{
 	@include box-shadow;
 	@include card-style($bg-1);
 
@@ -64,13 +38,11 @@ main
 
 		h2{font-family: $font-1;
 		}
-		
+
 		h3{font-family: $font-5;	
 		}
 	}	
-
-
-	}
+}
 		
 .resto-chic{
 	@include box-shadow;
@@ -87,43 +59,34 @@ main
 			background-image: -webkit-linear-gradient(165deg, #e38a12 16%, #8f5aff 82%);
 
 		}
-	
-	h3{		font-family: $font-6;
+
+		h3{		font-family: $font-6;
 			color: #e38a12;
 		}
-
-	
-
-
-	}
-	
-
-
+	}	
 }
-
-
 				
-.resto-delice{
+.resto-delice
+{
 	@include box-shadow;
 	@include card-style($bg-3);
-	a{ 
-			text-decoration: none;
+	a
+	{ 
+		text-decoration: none;
 		@include hover;
 		h2
 
 		{font-family:$font-3;
-	
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-		background-image: -webkit-linear-gradient(165deg,  $color-3 16%,blue 82%);
-	}
+
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+			background-image: -webkit-linear-gradient(165deg,  $color-3 16%,blue 82%);
+		}
 		h3{font-family: $font-7;
 			color: $color-3;
 
+		}		
 	}
-		
-
-}
 
 }
 
@@ -133,58 +96,53 @@ main
 	a{
 
 		text-decoration: none;
-			@include hover;
-			h2{font-family:$font-4;
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-		background-image: -webkit-linear-gradient(165deg,$color-4 16%, green 82%);
+		@include hover;
+		h2{font-family:$font-4;
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+			background-image: -webkit-linear-gradient(165deg,$color-4 16%, green 82%);
 		}
 		h3{font-family: $font-7;
 			color: $color-4;
-		
-	}
-	
 
-	}
-
-
-	
+		}
+	}	
 	
 }
 
+.annonce 
+{
+	@include box-shadow;
+	height: 50px;
+	width: 300px;
+	border-radius: 15px;
+	position: relative;
+
+	display: flex;
+	justify-content: center;
+
+	margin :100px auto;
+	font-size: 30px;
+	background-color: $background-secondary;
+
+	border: 0.3px solid $color-primary;
+	@include font;
+	@media screen and (min-width: 2560px){
+		height :150px;
+		width: 1000px;
+		margin: 300px auto;}
 
 
-	.annonce 
-	{
-		@include box-shadow;
-		height: 50px;
-		width: 300px;
-		border-radius: 15px;
-		position: relative;
-
-		display: flex;
-		justify-content: center;
-
-		margin :100px auto;
-		font-size: 30px;
-		background-color: $background-secondary;
-
-		border: 0.3px solid $color-primary;
-		@media screen and (min-width: 2560px){
-			height :150px;
-			width: 1000px;
-			margin: 300px auto;}
-
-		@include font;
-			h4 {
-				margin: auto;
-				&::after{	content: "\2026";
-					position: absolute;
-					padding-left: 5px;
-					overflow: hidden;
-					animation: ellipsis steps(4) 1.3s infinite;}
-				}
+		h4 {
+			margin: auto;
+			&::after{	content: "\2026";
+				position: absolute;
+				padding-left: 5px;
+				overflow: hidden;
+				animation: ellipsis steps(4) 1.3s infinite;
 			}
+		}
+	}
 
 
 
