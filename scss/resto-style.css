@@ -510,12 +510,6 @@ main {
       text-align: center;
       font-size: 12px;
       width: 90%; } }
-  @media screen and (max-width: 768px) {
-    .categorie-plat {
-      font-size: 10px; } }
-  @media screen and (max-width: 572px) {
-    .categorie-plat {
-      font-size: 8px; } }
   .categorie-plat__nom {
     margin-right: auto;
     margin-bottom: 20px;
